@@ -9,7 +9,7 @@ namespace coup{
     
     class Duke: public Player{
         public:
-            explicit Duke(Game g, string n): Player(g, n){}
+            Duke(Game &g, string n): Player(g, n){}
             void block(Player p);
             void tax();
     };

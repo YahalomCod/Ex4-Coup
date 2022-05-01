@@ -3,6 +3,7 @@
 #include <vector>
 #include "Game.hpp"
 #include "Assassin.hpp"
+#include <stdexcept>
 using namespace coup;
 using namespace std;
 

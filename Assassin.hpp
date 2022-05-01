@@ -9,7 +9,7 @@ namespace coup{
     
     class Assassin: public Player{
         public:
-            explicit Assassin(Game g, string n): Player(g, n){}
+            Assassin(Game &g, string n): Player(g, n){}
 
             void coup(Player p);
     };

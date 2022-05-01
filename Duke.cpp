@@ -1,5 +1,6 @@
 #include<iostream>
 #include <string>
+#include <stdexcept>
 #include <vector>
 #include "Game.hpp"
 #include "Duke.hpp"

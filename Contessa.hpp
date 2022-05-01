@@ -10,7 +10,7 @@ namespace coup{
     
     class Contessa: public Player{
         public:
-            explicit Contessa(Game g, string n): Player(g, n){}
+            Contessa(Game &g, string n): Player(g, n){}
             void block(Player c);
     };
 };

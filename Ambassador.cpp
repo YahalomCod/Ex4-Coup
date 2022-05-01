@@ -12,6 +12,6 @@ void Ambassador::transfer(Player p1, Player p2){
     this->advance_turn();
 }
 
-void Ambassador::block(Captain c){
+void Ambassador::block(Player p){
     this->advance_turn();
 }

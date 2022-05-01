@@ -44,7 +44,7 @@ int main() {
 		Reut
 		Gilad
 	*/
-	for(string name : players){
+	for(string name : players){ 
 		cout << name << endl;
 	}
 
@@ -53,19 +53,20 @@ int main() {
 
 	// throws no exceptions
 	duke.income();
-	assassin.income();
+	assassin.income(); 
 	ambassador.income();
 	captain.income();
 	contessa.income();
-
+ 
 	// throws exception, it is duke's turn now
-	try{
+	try{ 
 		assassin.income();
 	}catch (const std::exception &e){
 		std::cerr << e.what() << '\n';
-	}
+	} 
 	duke.income();
 	assassin.foreign_aid();
+	ambassador.foreign_aid();
 
 	// throws exception, the last operation duke performed
 	// is income, which cannot be blocked by any role
@@ -74,7 +75,7 @@ int main() {
 	}catch (const std::exception &e)
 	{
 		std::cerr << e.what() << '\n';
-	}
+	} 
 
 	cout << duke.coins() << endl; // prints 2
 	cout << assassin.coins() << endl; // prints 3
@@ -103,7 +104,7 @@ int main() {
 
 	duke.tax();
 	// no exception, assassin can coup with only 3 coins
-	assassin.coup(duke);
+	assassin.coup(duke); 
 
 	players = game_1.players();
 	/*
